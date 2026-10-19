@@ -1,0 +1,20 @@
+{
+  "currency": "CNY",
+  "unit": "per_1m_tokens",
+  "version": "replace-me",
+  "source": "example only — replace these rates with your contracted prices before using",
+  "timeZone": "Asia/Shanghai",
+  "peakHours": [],
+  "holidays": [],
+  "models": {
+    "your-provider": {
+      "your-model": {
+        "offPeak": {
+          "input": 1,
+          "output": 4,
+          "cacheHit": 0.02
+        }
+      }
+    }
+  }
+}
