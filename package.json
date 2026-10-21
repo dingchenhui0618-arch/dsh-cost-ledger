@@ -1,6 +1,7 @@
 {
   "name": "dsh-cost-ledger",
   "version": "0.1.0",
+  "engines": { "dsh": ">=0.2.1-rc.2 <0.3.0" },
   "description": "Auditable token-cost ledger for DeepSeek Harness: per-call model/token/CNY records, hour/day/session aggregates, JSON|CSV export, dry-run preview, and a side-by-side diff against manually entered platform bills.",
   "type": "module",
   "main": "lib/index.js",
