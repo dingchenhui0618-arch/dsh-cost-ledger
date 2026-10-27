@@ -1,8 +1,16 @@
 # dsh-cost-ledger
 
+[![CI](https://github.com/dingchenhui0618-arch/dsh-cost-ledger/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/dingchenhui0618-arch/dsh-cost-ledger/actions/workflows/ci.yml)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 给 DeepSeek Harness 的**可核对 token 成本账**：每次模型调用记下 provider / model / 输入 / 输出 / 缓存命中 token 和按本地价目表算出的 CNY；按小时、日、会话三档聚合；支持 JSON / CSV 导出与 `dry-run` 预览；并把你手填的官方账单数字并列成一列，直接看「我算的」和「平台收的」差多少。
 
 它不画充能动画，也不猜余额。它只做一件事：把账留下来，并且让估算和账单事实分得开。
+
+> 用着还行的话，点个 ⭐ 就够了——插件市场的「搜插件」按 GitHub star 排序，star 是这个插件能被人翻到的唯一杠杆。
+
+安全模型——它旁听哪条事件、记下哪些字段（不记 prompt）、账本写到哪、哪些限制是设计取舍：
+[SECURITY.md](SECURITY.md)。
 
 ## 灵感来源与独立实现
 

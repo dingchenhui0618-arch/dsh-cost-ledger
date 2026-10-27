@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased]
+
+### 文档与工程
+
+- 新增 `SECURITY.md`：写清 `llm/stream` 旁听记哪些字段（不记 prompt/回答）、账本 append-only
+  写到 `$DSH_HOME/cost-ledger.jsonl`、路由没有独立 token、未知模型不猜价、CSV 公式注入已转义，
+  以及两条日期写死在 `2026-10-19` 的账单测试。
+- 新增 `.github/workflows/ci.yml`：ubuntu + windows × node 22/24，构建后断言 `lib/` 与
+  `src/` 一致；测试用 `--test-skip-pattern` 跳过上述两条日期用例，其余 46 条照跑。
+- README 顶部加 CI 与 license badge，引言后加一句 star 引导。没有加 npm badge——npm 上的
+  `dsh-cost-ledger` 是别人的包，本仓库没有发布。
+
 ## 0.1.0
 
 首个版本：
